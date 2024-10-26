@@ -2,10 +2,10 @@
 #define INCLUDE_GAMEPAD_MODULE
 #include <Dabble.h>
 
-#define LMOTOR_1 2
-#define LMOTOR_2 3
-#define RMOTOR_1 4
-#define RMOTOR_2 5
+#define LMOTOR_1 4
+#define LMOTOR_2 5
+#define RMOTOR_1 6
+#define RMOTOR_2 7
 
 #define LMOTOR_A 9
 #define RMOTOR_A 10
