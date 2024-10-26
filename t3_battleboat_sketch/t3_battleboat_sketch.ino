@@ -45,7 +45,8 @@ void setup() {
   pinMode(LMOTOR_A, OUTPUT);
   pinMode(RMOTOR_A, OUTPUT);
 
-  Serial.begin(9600);
+  Serial.begin(250000);
+  Dabble.begin(9600);
 }
 
 void loop() {
