@@ -16,7 +16,7 @@
 #define DO_PRINTOUT
 
 void drive_single(uint32_t p1, uint32_t p2, uint32_t ps, float req) {
-  uint32_t spd = (uint32_t)(abs(req) * MAXSPEED)
+  uint32_t spd = (uint32_t)(abs(req) * MAXSPEED);
   if (abs(req) <= 0.1) {
     digitalWrite(p1, LOW);
     digitalWrite(p2, LOW);
@@ -58,10 +58,10 @@ void loop() {
   l_req = 0.5;
   r_req = 0.5;
 #else
-  float steer = Dabble.getXaxisData() / 7.0;
+  float steer = GamePad.getXaxisData() / 7.0;
 
   float fwd = (GamePad.isCirclePressed() ? 1.0 : (GamePad.isCrossPressed() ? -1.0 : 0.0));
-  float afwd = Dabble.getYaxisData() / 7.0;
+  float afwd = GamePad.getYaxisData() / 7.0;
 
   if (abs(afwd) > 0.2) {
     fwd += afwd;
