@@ -2,18 +2,18 @@
 #define INCLUDE_GAMEPAD_MODULE
 #include <Dabble.h>
 
-#define LMOTOR_1 4
-#define LMOTOR_2 5
-#define RMOTOR_1 6
-#define RMOTOR_2 7
+#define RMOTOR_1 4
+#define RMOTOR_2 5
+#define LMOTOR_1 6
+#define LMOTOR_2 7
 
-#define LMOTOR_A 9
-#define RMOTOR_A 10
+#define RMOTOR_A 9
+#define LMOTOR_A 10
 
-#define MAXSPEED 200
+#define MAXSPEED 255
 
 //#define OVERRIDE_REMOTE_CONTROL 0.5
-#define DO_PRINTOUT
+//#define DO_PRINTOUT
 
 void drive_single(uint32_t p1, uint32_t p2, uint32_t ps, float req) {
   uint32_t spd = (uint32_t)(abs(req) * MAXSPEED);
